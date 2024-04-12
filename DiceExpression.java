@@ -36,12 +36,6 @@ public class DiceExpression {
                 optionalOperation = matcher.group(3);
                 optionalOperationOperand = Integer.parseInt(matcher.group(4));
 
-                System.out.println("Number of dice: " + diceCount);
-                System.out.println("Number of sides: " + diceSides);
-                if (optionalOperation != null) {
-                    System.out.println("Optional operation: " + optionalOperation);
-                    System.out.println("Optional operand: " + optionalOperationOperand);
-                }
             } else {
                 System.out.println("Invalid input format");
             }
