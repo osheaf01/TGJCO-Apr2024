@@ -1,7 +1,7 @@
 public class DiceRoller {
     public static void main(String[] args) {
         // Placeholder for user input handling
-        String userInput = "2d6+3"; // Example input
+        String userInput = "2d2*5"; // Example input
         DiceExpression expression = new DiceExpression(userInput);
         int result = expression.evaluate();
         System.out.print("Input: " + userInput);

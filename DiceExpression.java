@@ -66,8 +66,8 @@ public class DiceExpression {
         int result = rollDice(diceCount, diceSides);
 
         switch (optionalOperation) {
-            case "-" : result -= optionalOperationOperand;
-            case "*" : result *= optionalOperationOperand;
+            case "-" : result -= optionalOperationOperand; break;
+            case "*" : result *= optionalOperationOperand; break;
             default: result += optionalOperationOperand;
         }
         return result;
