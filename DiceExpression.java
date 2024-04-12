@@ -48,7 +48,7 @@ public class DiceExpression {
         if (operation == null || operand == null){
             return false;
         }
-        return operation.isEmpty() ? operand.isEmpty() : !operand.isEmpty();
+        return operation.isEmpty() == operand.isEmpty();
     }
 
     private static int getCount(Matcher matcher, int diceCount) {
